@@ -24,7 +24,6 @@ import com.ecommerce.service.impl.CustomerServiceImpl;
 import jakarta.validation.Valid;
 
 
-
 @Controller
 public class LoginController {
 	
@@ -36,12 +35,14 @@ public class LoginController {
 	
 	@Autowired
     private BCryptPasswordEncoder passwordEncoder;
+	
 
 	@RequestMapping("/login")
     public String login(Model model) {
         model.addAttribute("title", "Login Page");
         return "login";
     }
+	
 	
 	@RequestMapping("/admin/index")
     public String index(Model model) {

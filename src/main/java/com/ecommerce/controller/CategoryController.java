@@ -56,7 +56,7 @@ public class CategoryController {
             redirectAttributes.addFlashAttribute("error",
                     "Error server");
         }
-        return "redirect:/categories";
+        return "redirect:/admin/categories";
     }
 
     @RequestMapping(value = "/admin/findById", method = {RequestMethod.PUT, RequestMethod.GET})

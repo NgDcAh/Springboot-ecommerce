@@ -27,6 +27,11 @@ public class HomeController {
 	@Autowired 
 	private ProductServiceImpl productServiceImpl;
 	
+	@RequestMapping("/")
+	public String index(Model model) {            
+	    return "redirect:/home";
+	}
+	
 
 	@RequestMapping(value = "/home", method = RequestMethod.GET)
     public String home(Model model, Principal principal, HttpSession session) {

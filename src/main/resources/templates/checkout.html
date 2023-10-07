@@ -94,17 +94,14 @@
 											class="text-muted small">x[(${item.quantity})]</span><span
 											class="text-muted small">[(${item.product.costPrice})]$</span></li>
 									<li class="border-bottom my-2"></li>
-
-									<li class="border-bottom my-2"></li>
-									<li class="d-flex align-items-center justify-content-between"><strong
-											class="text-uppercase small fw-bold">Total</strong><span
-											th:text="${shoppingCart.totalPrice}"></span></li>
-									<li class="border-bottom my-2"></li>
-									<div class="col-lg-12 form-group">
-										<button class="btn btn-dark" type="submit">Place order</button>
-									</div>
 								</ul>
-
+								<div class="d-flex align-items-center justify-content-between"><strong
+										class="text-uppercase small fw-bold">Total</strong><span
+										th:text="${shoppingCart.totalPrice}"></span></div>
+								<div class="border-bottom my-2"></div>
+								<div class="col-lg-12 form-group">
+									<button class="btn btn-dark" type="submit">Place order</button>
+								</div>
 							</div>
 						</div>
 					</form>
