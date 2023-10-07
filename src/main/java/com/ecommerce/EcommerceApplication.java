@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
-@SpringBootApplication(scanBasePackages = "com..*", exclude = { SecurityAutoConfiguration.class })
+@SpringBootApplication(scanBasePackages = "com..*")
 @EnableJpaRepositories(value = "com.ecommerce.repository")
 @EntityScan(value = "com.ecommerce.model")
 public class EcommerceApplication {
